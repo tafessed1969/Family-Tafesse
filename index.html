@@ -1,164 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Demeke Tafesse Kebede – HTML Notes</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  <style>
-    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
-    h1, h2, h3 { color: #2c3e50; }
-    p { margin-bottom: 12px; }
-    a { color: #1a0dab; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ol, ul { margin-bottom: 16px; }
-    .image-container { max-width: 600px; margin: 20px auto; text-align: center; }
-    .image-container img { width: 100%; height: auto; border: 2px solid #ccc; border-radius: 8px; }
-    .caption { font-style: italic; color: #555; margin-top: 8px; }
-    .blue_box { border: 10px solid blue; padding: 0.5em; margin: 0.5em; width: 150px; height: 100px; float: right; }
-    .red_box { border: 10px solid red; padding: 0.5em; margin: 0.5em; width: 20px; height: 20px; float: right; }
-    .custom-body { font-family: 'Tangerine', serif; font-size: 48px; margin-top: 30px; }
-    .centered { text-align: center; }
-    .navbar { background-color: #2c3e50; overflow: hidden; padding: 12px 20px; }
-    .navbar a { float: left; color: white; text-align: center; padding: 12px; margin-right: 10px; text-decoration: none; font-weight: bold; }
-    .navbar a:hover { background-color: #1a252f; border-radius: 4px; }
-  </style>
+margin: 1.5rem 0;
+}
+
+
+.family-member {
+flex: 1;
+min-width: 200px;
+background: var(--light);
+padding: 1rem;
+border-radius: 8px;
+text-align: center;
+}
+
+
+.family-member i {
+font-size: 2rem;
+color: var(--secondary);
+margin-bottom: 0.5rem;
+}
+
+
+.ethiopia-flag {
+height: 20px;
+width: 30px;
+display: inline-block;
+background: linear-gradient(to bottom, #078930 33%, #FCDD09 33%, #FCDD09 66%, #DA121A 66%);
+margin-right: 8px;
+border-radius: 2px;
+vertical-align: middle;
+}
+
+
+footer {
+background: var(--primary);
+color: white;
+text-align: center;
+padding: 2rem 0;
+margin-top: 3rem;
+}
+
+
+.social-links {
+margin-top: 1rem;
+}
+
+
+.social-links a {
+color: white;
+font-size: 1.5rem;
+margin: 0 10px;
+transition: color 0.3s;
+}
+
+
+.social-links a:hover {
+color: var(--secondary);
+}
+
+
+@media (max-width: 768px) {
+.main-content {
+flex-direction: column;
+}
+
+
+.sidebar {
+order: 2;
+}
+
+
+.content {
+order: 1;
+}
+}
+</style>
 </head>
 <body>
-
-<div class="navbar">
-  <a href="#html-notes">HTML Notes</a>
-  <a href="#chemistry-notes">Chemistry Notes</a>
-  <a href="#images">Images</a>
-  <a href="#lists">Lists</a>
-  <a href="#links">Links</a>
+<header>
+<div class="header-content">
+<h1>Demeke Tafesse Kebede</h1>
+<p>HTML Notes, Family Story & Ethiopian Heritage</p>
 </div>
+</header>
 
-<h1 id="html-notes">Demeke Tafesse Kebede – HTML Notes</h1>
-<p>This page is a collection of my notes, images, and examples about HTML and CSS.</p>
+
+<div class="container">
+<div class="main-content">
+<aside class="sidebar">
+<h2>Quick Navigation</h2>
+<ul class="nav-links">
+<li><a href="#html-notes"><i class="fas fa-code"></i> HTML Notes</a></li>
+<li><a href="#family-story"><i class="fas fa-users"></i> Family Story</a></li>
+<li><a href="#ethiopia"><i class="fas fa-globe-africa"></i> About Ethiopia</a></li>
+<li><a href="#history"><i class="fas fa-landmark"></i> Ethiopian History</a></li>
+<li><a href="#geography"><i class="fas fa-mountain"></i> Geography</a></li>
+<li><a href="#economy"><i class="fas fa-chart-line"></i> Economy</a></li>
+<li><a href="#population"><i class="fas fa-users"></i> Population</a></li>
+<li><a href="#culture"><i class="fas fa-monument"></i> Culture & Religion</a></li>
+</ul>
+
 
 <div class="image-container">
-  <img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
-  <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
-</div>
-
-<h2>The Web</h2>
-<p>The Web (or World Wide Web) is a collection of documents and other files. Most documents are made using HTML.</p>
-
-<h2>What is HTML?</h2>
-<p>HTML stands for <em>Hypertext Markup Language</em>. It's used to define the structure or layout of a web page.</p>
-
-<h2>Whitespace Examples</h2>
-<p>Aah! I'm confused about <em>whitespace</em>.</p>
-<p>Aah!<br>I'm<br>confused<br>about <em>whitespace</em>.</p>
-<p>My name is <sub>Demeke Tafesse Kebede</sub><br>My name is <sup>Demeke Tafesse Kebede</sup></p>
-<p>This is a <em>very <mark>important</mark></em> message.</p>
-
-<h2 id="chemistry-notes">My Chemistry Notes</h2>
-<p><strong>Molecule name:</strong> <em>Sulfur hexafluoride</em></p>
-<p><strong>Molecular formula:</strong> SF<sub>6</sub></p>
-<p><strong>Note:</strong> This gas has a much higher density than air. Basically the opposite of helium. <mark>Crazy!</mark></p>
-
-<div>
-  <p>This is the first paragraph. The background color of these paragraphs have been colored to distinguish them from their parent element.</p>
-  <p>This is the second paragraph.</p>
-</div>
-
-<div>
-  <p>Call me Ishmael.</p>
-  <p>Just don't call me late for dinner.</p>
-</div>
-
-<h2 id="lists">Ordered and Unordered Lists</h2>
-<ol>
-  <li>Learn HTML.</li>
-  <li>Learn CSS.</li>
-  <li>Learn Python.</li>
-  <li>Save the world.</li>
-</ol>
-<ol>
-  <li>Demeke</li>
-  <li>Tafesse</li>
-  <li>Kebede</li>
-</ol>
-<ul>
-  <li>Demeke</li>
-  <li>Tafesse</li>
-  <li>Kebede</li>
-</ul>
-
-<h2>Animals</h2>
-<ul>
-  <li>Mammals
-    <ol type="a">
-      <li>Raccoons</li>
-      <li>Gorillas</li>
-    </ol>
-  </li>
-  <li>Reptiles
-    <ol type="a">
-      <li>Iguanas</li>
-      <li>Cobras</li>
-    </ol>
-  </li>
-  <li>Birds
-    <ol type="a">
-      <li>Ostriches</li>
-      <li>Ravens</li>
-    </ol>
-  </li>
-</ul>
-
-<ul>
-  <li>Yikes!</li>
-  <li>This</li>
-  <li>keeps</li>
-  <li>indenting</li>
-  <li>to the right!</li>
-</ul>
-
-<ol>
-  <li>Tomatoes</li>
-  <li>Carrots</li>
-  <li>Cucumbers</li>
-</ol>
-
-<div class="image-container" id="images">
-  <img src="https://raw.githubusercontent.com/tafessed1969/Family-Tafesse/main/Demeke_TK_Family_Photo.jpg" alt="Demeke Tafesse Family Photo">
-  <div class="caption">Demeke Tafesse Kebede – Family Photo</div>
-</div>
-
-<h2>Paragraph Color Examples</h2>
-<p style="color: red;">Make me red!</p>
-<p style="color: green;">Make me green!</p>
-<p style="color: blue;">Make me blue!</p>
-
-<h2>Haikus / Centered Text</h2>
-<p class="centered">This is a haiku</p>
-<p class="centered">So I want each line centered</p>
-<p class="centered">Let’s make it stylish</p>
-<p style="color: blue; text-align: center;">Hello world!</p>
-
-<h2 id="links">Links</h2>
-<p><a href="https://github.com/">GitHub</a></p>
-<p><a href="http://google.com/">The Example Page</a></p>
-<p><a href="https://www.udacity.com">Udacity</a></p>
-
-<h2>Placeholder Images</h2>
-<img src="https://placebear.com/200/200" alt="A picture of a bear.">
-<img src="https://placekitten.com/200/200" alt="A picture of a kitten.">
-<img src="https://placebear.com/150/150" alt="A picture of a bear.">
-<img src="https://placecats.com/150/150" alt="A picture of a kitten.">
-
-<h2>Floating Boxes</h2>
-<div class="blue_box">Hooray, a blue box!
-  <div class="red_box"></div>
-</div>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-
-<h2>Custom Font Section</h2>
-<div class="custom-body">Making the Web Beautiful!</div>
-
-</body>
-</html>
